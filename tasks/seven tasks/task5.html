@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<style>
+        button {
+            background-color: lightgray;
+            border: 1px solid gray;
+            border-radius: 10px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 14px 12px;
+            cursor: pointer;
+        }
+</style>
+<body>
+        <button>click me!</button>
+</body>
+<script>
+        
+        let btn = document.getElementsByTagName("button")[0];
+        btn.addEventListener("click", e=>{
+                //  random numbers
+                let rand1 = Math.floor(Math.random() *256)
+                let rand2 = Math.floor(Math.random() *256)
+                let rand3 = Math.floor(Math.random() *256)
+                // change colors
+                
+                document.getElementsByTagName("body")[0].style.backgroundColor = `rgb(${rand1},${rand2},${rand3})`;
+        })
+       
+</script>
+</html>

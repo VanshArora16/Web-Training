@@ -1,0 +1,75 @@
+/* Centering the calculator */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #212529;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        h1{
+                color: #E1E5F2;
+                font-size: 30px;
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 30px;
+        }
+        /* Calculator container styling */
+        .calculator {
+            background-color: #343A40;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+        
+        }
+
+        /* Display styling */
+        .calculator-display {
+            width: 100%;
+            height: 50px;
+            font-size: 1.5em;
+            text-align: right;
+            padding: 1px;
+            border: 2px solid #DEE2E6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #E9ECEF;
+        }
+
+        /* Button grid styling */
+        .calculator-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        /* Individual button styling */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        /* Operator and equal button styling */
+        .button.operator {
+            background-color: #f39c12;
+        }
+
+        .button.equal {
+            grid-column: span 2;
+            background-color: #3498db;
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #3e8e41;
+        }

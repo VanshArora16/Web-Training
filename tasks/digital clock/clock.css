@@ -1,0 +1,52 @@
+/* Center the clock on the page */
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #212529; 
+}
+.con{
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #6C757D;
+        padding: 30px;
+    }
+    h1{
+        color: #F8F9FA;
+        font-size: 30px;
+        text-align: center;
+        font-family:    "Crimson Text", serif;
+    }
+    /* Style the clock */
+    #clock {
+        width: 50%;
+        max-height: 50%;
+        font-weight: bold;
+        padding: 170px 100px;
+        border: 5px solid #F8F9FA;
+        background-color: #343A40; 
+        border-radius: 10px;
+        text-align: center;
+        border-radius:50% 
+}
+/* time */
+#time{
+        margin: auto;
+        padding: 10px;
+        font-size: 50px;
+        color: #E9ECEF; 
+        font-family:"Doto";
+        
+}
+
+/* Style for smaller screens */
+@media (max-width: 600px) {
+        #clock {
+                font-size: 40px;
+                padding: 133px 30px;
+        }
+    }
